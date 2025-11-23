@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Кошик</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Про нас</h2>
+            <p>Description</p>
+            <img src="img/test.avif" alt="">
+        </section>
+
+        <section id="products">
+            <h2>Наші товари</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Телефони</button>
+                <button type="button" class="btn btn-primary">Планшети</button>
+                <button type="button" class="btn btn-primary">Комп'ютери</button>
+            </div>
+            <div class="products-div">
+                <article class="product" data-category="laptop">
+                    <img src="img/test.avif" alt="" class="product-img">
+                    <h3 class="product-title">Товар 1</h3>
+                    <p class="product-description">Опис товару</p>
+                    <button type="button" class="btn btn-primary">До кошику</button>
+                </article>
+                <article class="product" data-category="">
+                    <img src="img/test.avif" alt="" class="product-img">
+                    <h3 class="product-title">Товар 1</h3>
+                    <p class="product-description">Опис товару</p>
+                    <button type="button" class="btn btn-primary">До кошику</button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
