@@ -53,12 +53,16 @@ function applyFilters(categoryType) {
 }
 
 function addToCart(productId) {
-    let product = products.find(p => p.id == productId);
-    if (product) {
-        cart.push(product);
-        alert("Товар додано " + product.name)
-        // тут буде збереження в cookies or localStorage
+    let cartProduct = cart.find(p => p.id == productId);
+    if (cartProduct) {
+        cartProduct.quantity += 1;
     }
+    else {
+        let product = products.find(p => p.id == productId);
+        cart.push({ ...product, quantity: 1 });
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert("Товар додано!")
 }
 
 let productsMap = {
